@@ -2,7 +2,7 @@
 Name:           perl-Pod-Perldoc
 # let's overwrite the module from perl.srpm
 Version:        %(echo '%{cpan_version}' | sed 's/_/./')
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Look up Perl documentation in Pod format
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -98,6 +98,9 @@ make test
 %{_mandir}/man3/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.20-4
+- Mass rebuild 2013-12-27
+
 * Mon Oct 07 2013 Petr Pisar <ppisar@redhat.com> - 3.20-3
 - Correct perldoc.pod location (bug #1015993)
 
